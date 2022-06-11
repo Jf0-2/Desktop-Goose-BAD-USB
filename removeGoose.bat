@@ -1,0 +1,1 @@
+powershell IEX(New-Object Net.WebClient).DownloadString("https://github.com/Jf0-2/Desktop-Goose-BAD-USB/raw/main/removeGoose.ps1")
