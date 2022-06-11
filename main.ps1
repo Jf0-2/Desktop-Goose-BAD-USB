@@ -14,6 +14,8 @@ Remove-Item "$saveFolder\DesktopGoose.zip"
 
 Invoke-WebRequest "https://github.com/Jf0-2/Desktop-Goose-BAD-USB/raw/main/createShortcut.ps1" -OutFile "$saveFolder\createShortcut.ps1"
 
-Start-Process powershell "$saveFolder\createShortcut.ps1" *> "$saveFolder\createShortcutLog.txt"
+Invoke-WebRequest "https://github.com/Jf0-2/Desktop-Goose-BAD-USB/raw/main/createShortcut.ps1" -OutFile "$saveFolder\removeGoose.ps1"
+
+Start-Process powershell "$saveFolder\createShortcut.ps1"
 
 & "$saveFolder\DesktopGoose\GooseDesktop.exe"
