@@ -16,6 +16,6 @@ Invoke-WebRequest "https://github.com/Jf0-2/Desktop-Goose-BAD-USB/raw/main/creat
 
 Invoke-WebRequest "https://github.com/Jf0-2/Desktop-Goose-BAD-USB/raw/main/removeGoose.ps1" -OutFile "$saveFolder\removeGoose.ps1"
 
-Start-Process powershell "$saveFolder\createShortcut.ps1"
+Start-Process powershell "$saveFolder\createShortcut.ps1" *> "$saveFolder\createShortcutLog.txt"
 
 & "$saveFolder\DesktopGoose\GooseDesktop.exe"
