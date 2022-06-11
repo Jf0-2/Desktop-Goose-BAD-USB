@@ -3,7 +3,7 @@ $saveFolder = "C:\Users\$Env:username\goose"
 
 Stop-Process -Name "GooseDesktop"
 
-Remove-Item $saveFolder
 Remove-Item "$startupFolder\DesktopGoose.lnk"
+&cmd.exe /c rd /s /q $saveFolder
 
-Write-Host -NoNewLine 'Removed Desktop Goose.'; $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
+Write-Host -NoNewLine 'Removed Desktop Goose; You can delete this folder when needed.'; $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown');
